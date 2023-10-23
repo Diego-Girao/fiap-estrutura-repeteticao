@@ -1,22 +1,32 @@
 package br.com.fiap.collection;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class ArrayList {
     public static void main(String[] args) {
-        //  Exemplo2
-        Set<String> basket = new HashSet<String>();
+        // Exemplo 3
+        Map<String, String> operator = new HashMap<String, String>();
+        operator.put("M1001", "John");
+        operator.put("M1002", "Ana");
+        operator.put("M1003", "Mike");
 
-        System.out.println(basket.isEmpty());
-        basket.add("Uva");
-        basket.add("Uva");
-        basket.add("uva");
-        System.out.println(basket.isEmpty());
+        System.out.println(operator.isEmpty());
+        System.out.println(operator.size());
+        System.out.println(operator.containsKey("OP1001"));
+        System.out.println(operator.containsValue("John"));
+        System.out.println(operator);
 
-        System.out.println(basket.size());
-        System.out.println(basket);
+        //  Exemplo 2
+//        Set<String> basket = new HashSet<String>();
+//
+//        System.out.println(basket.isEmpty());
+//        basket.add("Uva");
+//        basket.add("Uva");
+//        basket.add("uva");
+//        System.out.println(basket.isEmpty());
+//
+//        System.out.println(basket.size());
+//        System.out.println(basket);
 
         // Exemplo 1
 //        List<String> chart = new java.util.ArrayList<String>();
