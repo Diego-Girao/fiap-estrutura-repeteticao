@@ -12,4 +12,6 @@ public abstract class ContaCorrente {
         }
         saldo = saldo - valor;
     }
+
+    public abstract double verificarSaldo();
 }
